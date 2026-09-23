@@ -38,7 +38,7 @@ func TestHelloHandler(t *testing.T) {
 	}
 
 	body := strings.TrimSpace(rec.Body.String())
-	expected := "Hello, Nishchal!"
+	expected := "Hello, Nishchal (Docker part)!"
 	if body != expected {
 		t.Errorf("expected body %q, got %q", expected, body)
 	}
