@@ -19,7 +19,7 @@ func GetMessage(name string) string {
 func HelloHandler(w http.ResponseWriter, r *http.Request) {
 	name := r.URL.Query().Get("name")
 	if name == "" {
-		name = "Nishchal"
+		name = "Nishchal (Docker part)"
 	}
 	fmt.Fprintln(w, GetMessage(name))
 }
